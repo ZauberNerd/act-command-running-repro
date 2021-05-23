@@ -1,0 +1,100 @@
+name: CI
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 2
+      - run: echo "::set-output name=did_run::1"
+        id: test
+      - run: test ${{ steps.test.outputs.did_run }} = 1
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 2
+      - run: echo "::set-output name=did_run::1"
+        id: build
+      - run: test ${{ steps.build.outputs.did_run }} = 1
+
+  one:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 2
+      - run: echo "::set-output name=did_run::1"
+        id: one
+      - run: test ${{ steps.one.outputs.did_run }} = 1
+
+  two:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 2
+      - run: echo "::set-output name=did_run::1"
+        id: two
+      - run: test ${{ steps.two.outputs.did_run }} = 1
+
+  three:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 2
+      - run: echo "::set-output name=did_run::1"
+        id: three
+      - run: test ${{ steps.three.outputs.did_run }} = 1
+
+  four:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 2
+      - run: echo "::set-output name=did_run::1"
+        id: four
+      - run: test ${{ steps.four.outputs.did_run }} = 1
+
+  five:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 2
+      - run: echo "::set-output name=did_run::1"
+        id: five
+      - run: test ${{ steps.five.outputs.did_run }} = 1
+
+  six:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 2
+      - run: echo "::set-output name=did_run::1"
+        id: six
+      - run: test ${{ steps.six.outputs.did_run }} = 1
+
+  seven:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 2
+      - run: echo "::set-output name=did_run::1"
+        id: seven
+      - run: test ${{ steps.seven.outputs.did_run }} = 1
+
+  eight:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 2
+      - run: echo "::set-output name=did_run::1"
+        id: eight
+      - run: test ${{ steps.eight.outputs.did_run }} = 1
+
+  nine:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 2
+      - run: echo "::set-output name=did_run::1"
+        id: nine
+      - run: test ${{ steps.nine.outputs.did_run }} = 1
+
+  ten:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 2
+      - run: echo "::set-output name=did_run::1"
+        id: ten
+      - run: test ${{ steps.ten.outputs.did_run }} = 1
